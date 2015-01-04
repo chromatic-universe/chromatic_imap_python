@@ -1,0 +1,252 @@
+!SESSION 2014-09-13 20:37:09.236 -----------------------------------------------
+eclipse.buildId=M20130204-1200
+java.version=1.7.0_21
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product -data /media/wiljoh/55FE-3B01/chromatic_universe/trunk/python/antlr/workspace/chromatic_imap_ext -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.jface 2 0 2014-09-13 20:37:14.208
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-09-13 20:37:14.208
+!MESSAGE A conflict occurred for CTRL+I:
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.linuxtools.systemtap.ui.dashboard.commands.ImportModuleAction,&Import Modules,
+		Import Dashboard Module Directory,
+		Category(org.eclipse.linuxtools.systemtap.ui.dashboard.category.file,File,File,true),
+		org.eclipse.ui.internal.MakeHandlersGo@17e421d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+I,
+	ParameterizedCommand(Command(zigen.plugin.InsertRecordCommand,Create New Record,
+		,
+		Category(zigen.plugin.db.category,DBViewer,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@26b71a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-09-13 20:37:14.208
+!MESSAGE A conflict occurred for ALT+CTRL+R:
+Binding(ALT+CTRL+R,
+	ParameterizedCommand(Command(org.python.pydev.debug.setnext,Set Next Statement,
+		,
+		Category(org.python.pydev.ui.category.run,PyDev - Run,Python run category,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1bf31fe,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+R,
+	ParameterizedCommand(Command(org.jkiss.dbeaver.core.resultset.rejectChanges,Reject changes,
+		Reject data changes,
+		Category(org.jkiss.dbeaver.core.rs,Result Set,Result Set Commands,true),
+		org.eclipse.ui.internal.MakeHandlersGo@16b353c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-09-13 20:37:14.208
+!MESSAGE A conflict occurred for SHIFT+CR:
+Binding(SHIFT+CR,
+	ParameterizedCommand(Command(zigen.plugin.SQLExecuteActionCommand,Execute All SQL,
+		,
+		Category(zigen.plugin.db.category,DBViewer,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1741dd9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+CR,
+	ParameterizedCommand(Command(org.jkiss.dbeaver.core.resultset.row.edit,Edit cell,
+		Edit cell value in separate dialog/editor,
+		Category(org.jkiss.dbeaver.core.rs,Result Set,Result Set Commands,true),
+		org.eclipse.ui.internal.MakeHandlersGo@53af06,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.workbench 4 2 2014-09-13 20:37:16.155
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.ExceptionInInitializerError
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at oracle.eclipse.tools.common.util.PluginUtil.instantiate(PluginUtil.java:233)
+	at oracle.eclipse.tools.common.util.PluginUtil.instantiate(PluginUtil.java:263)
+	at oracle.eclipse.tools.common.upgrade.internal.UpgradeFrameworkImpl.readExtensions(UpgradeFrameworkImpl.java:361)
+	at oracle.eclipse.tools.common.upgrade.internal.UpgradeFrameworkImpl.initialize(UpgradeFrameworkImpl.java:91)
+	at oracle.eclipse.tools.common.upgrade.UpgradeFramework.initialize(UpgradeFramework.java:26)
+	at oracle.eclipse.tools.common.upgrade.internal.StartupHandler.earlyStartup(StartupHandler.java:18)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$54.run(Workbench.java:2412)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.lang.NullPointerException
+	at oracle.eclipse.tools.weblogic.upgrade.internal.WlsRuntimeNameProjectUpgradeParticipant.<clinit>(WlsRuntimeNameProjectUpgradeParticipant.java:46)
+	... 17 more
+
+!ENTRY org.eclipse.ui 4 4 2014-09-13 20:37:16.161
+!MESSAGE Unhandled Exception
+
+!ENTRY oracle.eclipse.tools.common.upgrade 4 0 2014-09-13 20:37:16.165
+!MESSAGE Unable to execute early startup code for an extension
+!STACK 0
+java.lang.ExceptionInInitializerError
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at oracle.eclipse.tools.common.util.PluginUtil.instantiate(PluginUtil.java:233)
+	at oracle.eclipse.tools.common.util.PluginUtil.instantiate(PluginUtil.java:263)
+	at oracle.eclipse.tools.common.upgrade.internal.UpgradeFrameworkImpl.readExtensions(UpgradeFrameworkImpl.java:361)
+	at oracle.eclipse.tools.common.upgrade.internal.UpgradeFrameworkImpl.initialize(UpgradeFrameworkImpl.java:91)
+	at oracle.eclipse.tools.common.upgrade.UpgradeFramework.initialize(UpgradeFramework.java:26)
+	at oracle.eclipse.tools.common.upgrade.internal.StartupHandler.earlyStartup(StartupHandler.java:18)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$54.run(Workbench.java:2412)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.lang.NullPointerException
+	at oracle.eclipse.tools.weblogic.upgrade.internal.WlsRuntimeNameProjectUpgradeParticipant.<clinit>(WlsRuntimeNameProjectUpgradeParticipant.java:46)
+	... 17 more
+
+!ENTRY org.eclipse.ui.navigator 2 0 2014-09-13 20:37:17.534
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.ui 2 2 2014-09-13 20:37:34.812
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.html.ui, propertyPage: org.eclipse.wst.html.ui.propertyPage.project.validation)
+
+!ENTRY org.eclipse.ui 2 2 2014-09-13 20:37:34.816
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+!SESSION 2014-09-20 08:42:26.674 -----------------------------------------------
+eclipse.buildId=M20130204-1200
+java.version=1.7.0_21
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product -data /media/wiljoh/55FE-3B01/chromatic_universe/trunk/python/antlr/workspace/chromatic_imap_ext -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.jface 2 0 2014-09-20 08:42:33.259
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-09-20 08:42:33.259
+!MESSAGE A conflict occurred for CTRL+I:
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.linuxtools.systemtap.ui.dashboard.commands.ImportModuleAction,&Import Modules,
+		Import Dashboard Module Directory,
+		Category(org.eclipse.linuxtools.systemtap.ui.dashboard.category.file,File,File,true),
+		org.eclipse.ui.internal.MakeHandlersGo@535c5a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+I,
+	ParameterizedCommand(Command(zigen.plugin.InsertRecordCommand,Create New Record,
+		,
+		Category(zigen.plugin.db.category,DBViewer,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@d45773,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-09-20 08:42:33.259
+!MESSAGE A conflict occurred for ALT+CTRL+R:
+Binding(ALT+CTRL+R,
+	ParameterizedCommand(Command(org.python.pydev.debug.setnext,Set Next Statement,
+		,
+		Category(org.python.pydev.ui.category.run,PyDev - Run,Python run category,true),
+		org.eclipse.ui.internal.MakeHandlersGo@b97bf7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+R,
+	ParameterizedCommand(Command(org.jkiss.dbeaver.core.resultset.rejectChanges,Reject changes,
+		Reject data changes,
+		Category(org.jkiss.dbeaver.core.rs,Result Set,Result Set Commands,true),
+		org.eclipse.ui.internal.MakeHandlersGo@179cdeb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-09-20 08:42:33.259
+!MESSAGE A conflict occurred for SHIFT+CR:
+Binding(SHIFT+CR,
+	ParameterizedCommand(Command(zigen.plugin.SQLExecuteActionCommand,Execute All SQL,
+		,
+		Category(zigen.plugin.db.category,DBViewer,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1be2a1d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+CR,
+	ParameterizedCommand(Command(org.jkiss.dbeaver.core.resultset.row.edit,Edit cell,
+		Edit cell value in separate dialog/editor,
+		Category(org.jkiss.dbeaver.core.rs,Result Set,Result Set Commands,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1bf080d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.navigator 2 0 2014-09-20 08:42:34.124
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.ui.workbench 4 2 2014-09-20 08:42:41.491
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.ExceptionInInitializerError
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at oracle.eclipse.tools.common.util.PluginUtil.instantiate(PluginUtil.java:233)
+	at oracle.eclipse.tools.common.util.PluginUtil.instantiate(PluginUtil.java:263)
+	at oracle.eclipse.tools.common.upgrade.internal.UpgradeFrameworkImpl.readExtensions(UpgradeFrameworkImpl.java:361)
+	at oracle.eclipse.tools.common.upgrade.internal.UpgradeFrameworkImpl.initialize(UpgradeFrameworkImpl.java:91)
+	at oracle.eclipse.tools.common.upgrade.UpgradeFramework.initialize(UpgradeFramework.java:26)
+	at oracle.eclipse.tools.common.upgrade.internal.StartupHandler.earlyStartup(StartupHandler.java:18)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$54.run(Workbench.java:2412)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.lang.NullPointerException
+	at oracle.eclipse.tools.weblogic.upgrade.internal.WlsRuntimeNameProjectUpgradeParticipant.<clinit>(WlsRuntimeNameProjectUpgradeParticipant.java:46)
+	... 17 more
+
+!ENTRY org.eclipse.ui 4 4 2014-09-20 08:42:41.497
+!MESSAGE Unhandled Exception
+
+!ENTRY oracle.eclipse.tools.common.upgrade 4 0 2014-09-20 08:42:41.499
+!MESSAGE Unable to execute early startup code for an extension
+!STACK 0
+java.lang.ExceptionInInitializerError
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at java.lang.Class.newInstance0(Class.java:374)
+	at java.lang.Class.newInstance(Class.java:327)
+	at oracle.eclipse.tools.common.util.PluginUtil.instantiate(PluginUtil.java:233)
+	at oracle.eclipse.tools.common.util.PluginUtil.instantiate(PluginUtil.java:263)
+	at oracle.eclipse.tools.common.upgrade.internal.UpgradeFrameworkImpl.readExtensions(UpgradeFrameworkImpl.java:361)
+	at oracle.eclipse.tools.common.upgrade.internal.UpgradeFrameworkImpl.initialize(UpgradeFrameworkImpl.java:91)
+	at oracle.eclipse.tools.common.upgrade.UpgradeFramework.initialize(UpgradeFramework.java:26)
+	at oracle.eclipse.tools.common.upgrade.internal.StartupHandler.earlyStartup(StartupHandler.java:18)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$54.run(Workbench.java:2412)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+Caused by: java.lang.NullPointerException
+	at oracle.eclipse.tools.weblogic.upgrade.internal.WlsRuntimeNameProjectUpgradeParticipant.<clinit>(WlsRuntimeNameProjectUpgradeParticipant.java:46)
+	... 17 more
+
+!ENTRY org.eclipse.ui 2 2 2014-09-20 08:42:52.733
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.html.ui, propertyPage: org.eclipse.wst.html.ui.propertyPage.project.validation)
+
+!ENTRY org.eclipse.ui 2 2 2014-09-20 08:42:52.755
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
